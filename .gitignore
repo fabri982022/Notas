@@ -1,0 +1,9 @@
+# Local environment variables and credentials
+.env
+.env.*
+!.env.example
+
+# Build and dependency outputs
+backend/target/
+frontend/node_modules/
+frontend/dist/

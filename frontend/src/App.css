@@ -1,0 +1,96 @@
+:root {
+  --ink: #17211f;
+  --paper: #f7f8f4;
+  --soft: #e7ece3;
+  --accent: #c9e86b;
+}
+
+body {
+  background: var(--paper);
+}
+
+.app-shell {
+  color: var(--ink);
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  place-items: center;
+  color: var(--accent);
+  background: var(--ink);
+  font-family: 'DM Mono', monospace;
+}
+
+.editor-panel,
+.note-card,
+.category-panel {
+  border: 1px solid rgba(23, 33, 31, 0.12);
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(23, 33, 31, 0.06);
+}
+
+.editor-panel {
+  position: sticky;
+  top: 1rem;
+}
+
+.category-panel {
+  background: var(--soft);
+  box-shadow: none;
+}
+
+.form-control,
+.form-select {
+  border-color: rgba(23, 33, 31, 0.2);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #6c7f36;
+  box-shadow: 0 0 0 0.2rem rgba(201, 232, 107, 0.35);
+}
+
+.empty-state {
+  display: flex;
+  min-height: 12rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+  border: 1px dashed rgba(23, 33, 31, 0.25);
+  border-radius: 0.75rem;
+  color: #6c757d;
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .filter-row {
+    flex-wrap: wrap;
+  }
+
+  .filter-row .form-select {
+    min-width: 0;
+    flex: 1 1 10rem;
+  }
+
+  .editor-panel {
+    position: static;
+  }
+
+  .category-panel form {
+    width: 100%;
+  }
+}
