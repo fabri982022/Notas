@@ -128,7 +128,7 @@ function App() {
       </div>
       <section className="category-panel mt-5 p-4"><div className="row align-items-center g-3"><div className="col-md-5"><p className="text-uppercase small fw-semibold text-secondary mb-1">Organización</p><h2 className="h5 mb-0">Añade una etiqueta</h2></div><form className="col-md-7 d-flex gap-2" onSubmit={createCategory}><input className="form-control" value={newCategory} onChange={(event) => setNewCategory(event.target.value)} placeholder="ej. Ideas, Trabajo" maxLength="40" /><button type="submit" className="btn btn-dark">Añadir</button></form></div></section>
     </section>
-    <footer className="container py-4 border-top text-secondary small d-flex flex-column flex-sm-row justify-content-between gap-2"><span>Notes / Ensolvers challenge</span><span>Persistencia MySQL · API REST</span></footer>
+    <footer className="container py-4 border-top text-secondary small d-flex flex-column flex-sm-row justify-content-between gap-2"><span>Notes / Ensolvers challenge</span><span>Persistencia MySQL · API REST</span><span>Bazan Fabricio Agustín</span></footer>
   </main>
 }
 
